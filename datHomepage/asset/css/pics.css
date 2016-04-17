@@ -1,0 +1,144 @@
+@font-face {
+    font-family: stanley;
+    src: url(../font/StanleyPoster/Stanley-Poster.ttf);
+}
+
+.picsBloc{
+        height: 105%;
+}
+
+.modePics{
+    width: 1260px;
+    height: 630px;
+    color: white;
+    font-size: 50px;
+    margin:  auto;
+    margin-top: 25px;
+    background-image: url("../images/mode.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    display: table;
+    font-weight: bold;
+    font-family: stanley;
+
+}
+.modePics p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.restaurantPics{
+    width: 407px;
+    margin-top: 18px;
+    height: 488px;
+    position: relative;
+    left: 322px;
+    background-image: url("../images/food.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    display: table;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    font-family: stanley;
+}
+
+.restaurantPics p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.newletterPics{
+    width: 407px;
+    margin-top: 18px;
+    height: 217px;
+    position: relative;
+    left: 324px;
+    background-image: url("../images/tuile.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: table;
+    font-size: 18px;
+    float: left;
+    margin-left: 18px;
+}
+.newletterPics form{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.newletterPics label{
+    position: relative;
+    bottom: 16px;
+}
+.newletterPics input {
+    height: 39px;
+    width: 59%;
+    border: none;
+}
+
+.newletterPics button {
+    width: 105px;
+    height: 41px;
+    float: right;
+    position: relative;
+    right: 31px;
+    background: #a9c7bf;
+    text-align: center;
+    border: none;
+    color: white;
+}
+
+.socialPics {
+    width: 407px;
+    height: 247px;
+    background-color: #575757;
+    text-align: center;
+    display: table;
+    position: relative;
+    top : 253px;
+    right: 84px;
+    color: white;
+    font-size: 18px;
+}
+
+.socialPics p {
+    display: table-cell;
+    vertical-align: middle;
+}
+.socialPics span{
+    font-style: italic;
+}
+
+.fa{
+    color : #a9c7bf;
+    padding-right: 15px;
+}
+
+.artPics {
+    width: 407px;
+    float: right;
+    height: 488px;
+    background-image: url("../images/book.jpg");
+    background-position: center center;
+    background-size: cover;
+    font-weight: bold;
+    position: relative;
+    bottom : 229px;
+    right:  320px;
+    text-align: center;
+    display: table;
+    color: white;
+    font-family: stanley;
+    font-size: 40px;
+}
+
+.artPics p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+

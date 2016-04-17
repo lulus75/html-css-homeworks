@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+}
+
+.header{
+    height: 45px;
+    width: 100%;
+    border-bottom: 2px solid #e5e5e5;
+    display: table;
+}
+
+.menuLog{
+    display: table-cell;
+    vertical-align: middle;
+}
+.menuLog a{
+    text-decoration: none;
+    color:#d6d6d6;
+}
+.menuLog a:hover{
+    color: black;
+}
+.menuLog li{
+    display: inline;
+    color: #d6d6d6;
+    border-right: 1px dotted #d6d6d6;
+}
+.menuLog li:nth-of-type(1){
+    margin-left: 375px;
+    padding-right: 10px;
+
+}
+.menuLog li:nth-of-type(2){
+    padding-left: 5px;
+    border-right: none;
+}
+.menuLoupe{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    right: 375px;
+
+}
+.menuLoupe a{
+    text-decoration: none;
+    color: black;
+}
+.menuLoupe a:hover{
+    color: black;
+}
+.menuLoupe li{
+    display: inline;
+    float: right;
+    color: #d6d6d6;
+    border-right: 1px dotted #d6d6d6;
+
+}
+.menuLoupe li:nth-of-type(1){
+    padding-left: 18px;
+    border-right: none;
+}
+
+.menuLoupe li:nth-of-type(2){
+    padding-right: 16px;
+    color : black;
+}
+
+

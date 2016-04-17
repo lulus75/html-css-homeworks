@@ -1,0 +1,13 @@
+.footer{
+    height: 45px;
+    width: 100%;
+    position: relative;
+    bottom : 53px;
+    display: table;
+    vertical-align: middle;
+}
+.footer span{
+    position: relative;
+    left: 840px;
+    top : 16px;
+ }
