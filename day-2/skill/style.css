@@ -1,0 +1,67 @@
+/* Color for Stroke */
+/*html Stroke config */
+/*css Stroke config */
+/*js Stroke config */
+/*node Stroke config */
+ul {
+  list-style: none; }
+
+ul li {
+  display: table-cell; }
+
+/* html */
+.html {
+  width: 60px;
+  height: auto;
+  margin-left: -180px;
+  margin-bottom: 390px; }
+
+.first {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: #e34f26;
+  animation: dash 5s infinite; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+/* Css*/
+.css {
+  width: 60px;
+  height: auto;
+  margin-left: -177px;
+  margin-bottom: 390px; }
+
+.second {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: #0d84ce;
+  animation: dash 10s infinite; }
+
+/* Javascript */
+.js {
+  width: 60px;
+  height: auto;
+  margin-left: -177px;
+  margin-bottom: 396px; }
+
+.third {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: #f0e040;
+  animation: dash 13s infinite; }
+
+/* Node */
+.nodejs {
+  width: 60px;
+  height: auto;
+  margin-left: -180px;
+  margin-bottom: 390px; }
+
+.fourth {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: #83cd29;
+  animation: dash 20s infinite; }
+
+/*# sourceMappingURL=style.css.map */

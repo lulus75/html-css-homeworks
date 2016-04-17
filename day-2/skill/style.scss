@@ -1,0 +1,115 @@
+/* Color for Stroke */
+
+/*html Stroke config */
+
+$htmlStrokeColor : #e34f26;
+$htmlDasharray: 1000;
+$htmlDashoffset: 1000;
+$htmlSecondTime: 5s;
+$htmlDuration: infinite;
+
+/*css Stroke config */
+
+$cssStrokeColor : #0d84ce;
+$cssDasharray: 1000;
+$cssDashoffset: 1000;
+$cssSecondTime: 10s;
+$cssDuration: infinite;
+
+/*js Stroke config */
+
+$jsStrokeColor:#f0e040;
+$jsDasharray: 1000;
+$jsDashoffset: 1000;
+$jsSecondTime: 13s;
+$jsDuration: infinite;
+
+/*node Stroke config */
+
+$nodeStrokeColor : #83cd29;
+$nodeDasharray: 1000;
+$nodeDashoffset: 1000;
+$nodeSecondTime: 20s;
+$nodeDuration: infinite;
+
+
+$widthLogo: 60px;
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: table-cell;
+}
+
+/* html */
+
+.html {
+  width: $widthLogo;
+  height: auto;
+  margin-left: -180px;
+  margin-bottom: 390px;
+}
+
+.first {
+  stroke-dasharray: $htmlDasharray;
+  stroke-dashoffset: $htmlDashoffset;
+  stroke: $htmlStrokeColor;
+  animation: dash $htmlSecondTime $htmlDuration;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Css*/
+
+.css {
+  width: $widthLogo;
+  height: auto;
+  margin-left: -177px;
+  margin-bottom: 390px;
+}
+
+.second {
+  stroke-dasharray: $cssDasharray;
+  stroke-dashoffset: $cssDashoffset;
+  stroke: $cssStrokeColor;
+  animation: dash $cssSecondTime $cssDuration;
+}
+
+/* Javascript */
+
+.js {
+  width: $widthLogo;
+  height: auto;
+  margin-left: -177px;
+  margin-bottom: 396px;
+}
+
+.third {
+  stroke-dasharray: $jsDasharray;
+  stroke-dashoffset: $jsDashoffset;
+  stroke: $jsStrokeColor;
+  animation: dash $jsSecondTime $jsDuration;
+}
+
+/* Node */
+
+.nodejs {
+  width: $widthLogo;
+  height: auto;
+  margin-left: -180px;
+  margin-bottom: 390px;
+
+}
+
+.fourth {
+  stroke-dasharray: $nodeDasharray;
+  stroke-dashoffset: $nodeDashoffset;
+  stroke: $nodeStrokeColor;
+  animation: dash $nodeSecondTime $nodeDuration;
+}

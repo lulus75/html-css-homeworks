@@ -1,0 +1,15 @@
+svg {
+  height: 200px;
+  width: 200px; }
+
+.firstCircle {
+  stroke: blue;
+  fill: black;
+  stroke-width: 10; }
+
+.secondCircle {
+  stroke: none;
+  fill: red;
+  stroke-width: 0; }
+
+/*# sourceMappingURL=style.css.map */

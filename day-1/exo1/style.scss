@@ -1,0 +1,72 @@
+@mixin blockStyle($background, $color, $width, $height, $fontSize){
+  color : $color;
+  background-color : $background ;
+  width : $width;
+  height : $height;
+  font-size: $fontSize;
+}
+
+.container{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  @include blockStyle(#ff0000, #FFF, 500px, 500px,16px);
+}
+
+//Block Three
+
+.container:nth-of-type(3) .cornerTopRight{
+  position : absolute;
+  top :0;
+  right: 0;
+  @include blockStyle(#008001,#FFF,100px,100px,12px);
+
+}
+
+.container:nth-of-type(3) .cornerBottomLeft{
+  position : absolute;
+  bottom :0;
+  left: 0;
+  @include blockStyle(#808080,#FFF,100px,100px,12px);
+}
+
+
+//Block Four
+
+.container:nth-of-type(4) .cornerTopLeft{
+  position : absolute;
+  display:table;
+  top :0;
+  left: 0;
+  @include blockStyle(#FFF,#000,100px,150px,12px);
+  span{
+    display:table-cell;
+    vertical-align:middle;
+  }
+}
+.container:nth-of-type(4) .cornerTopRight{
+  position : absolute;
+  top :0;
+  right: 0;
+  @include blockStyle(#008001,#FFF,100px,150px,12px);
+}
+
+
+.container:nth-of-type(4) .cornerBottomLeft{
+  position : absolute;
+  bottom :0;
+  left: 0;
+  @include blockStyle(#808080,#FFF,100px,150px,12px);
+}
+.container:nth-of-type(4) .cornerBottomRight{
+  position : absolute;
+  display:table;
+  bottom :0;
+  right: 0;
+  @include blockStyle(#000,#FFF,100px,150px,12px);
+  span{
+    display:table-cell;
+    vertical-align:middle;
+  }
+}

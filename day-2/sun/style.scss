@@ -1,0 +1,63 @@
+text {
+  animation: fadeInLeft 4s, sunGlow 20s linear infinite;
+}
+
+.best {
+  margin-left: -245px;
+  animation: infinite-spinning 20s infinite;
+  margin-bottom: 45px;
+  width: 75px;
+  height: auto;
+}
+
+.path {
+  stroke-dasharray: 2.5;
+  stroke-dashoffset: 500;
+  animation: dash 20s infinite linear forwards, sunGlow 20s linear infinite;
+}
+
+@keyframes sunGlow {
+  0% {
+    fill: #f1c40f;
+    stroke: #f1c40f;
+  }
+  50% {
+    fill: #e67e22;
+    stroke: #e67e22;
+  }
+  100% {
+    fill: #f1c40f;
+    stroke: #f1c40f;
+  }
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke: "yellow";
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke: "orange";
+  }
+
+}

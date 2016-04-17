@@ -1,0 +1,23 @@
+@mixin svgWidth($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin circleStyle($border, $color,$borderWidth) {
+  stroke: $border;
+  fill : $color;
+  stroke-width: $borderWidth;
+}
+
+svg{
+  @include svgWidth(200px,200px);
+}
+
+.firstCircle{
+  @include circleStyle(blue,black,10);
+}
+
+.secondCircle{
+  @include circleStyle(none,red,0);
+}
+

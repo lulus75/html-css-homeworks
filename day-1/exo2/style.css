@@ -1,0 +1,121 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table; }
+
+.container {
+  display: table-cell;
+  vertical-align: middle; }
+
+#volet {
+  background-color: whiteSmoke;
+  width: 300px;
+  height: 125px;
+  box-shadow: none;
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: roboto;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  z-index: 6;
+  transform: translate(-50%, -25%);
+  display: none; }
+
+#volet span {
+  display: table-cell;
+  vertical-align: middle; }
+
+#close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3; }
+
+#close:hover {
+  opacity: 1; }
+
+#close:before, #close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333; }
+
+#close:before {
+  transform: rotate(45deg); }
+
+#close:after {
+  transform: rotate(-45deg); }
+
+#backgroundFilter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.8;
+  background-color: black;
+  display: none; }
+
+.loginForm {
+  margin: auto;
+  text-align: center;
+  background-color: #FFF;
+  width: 380px;
+  height: 420px;
+  box-shadow: 0px 0px 6px 1px #b8e3f9;
+  color: #6d6d6d;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial; }
+
+.loginForm .title {
+  color: #31393d;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: Arial; }
+
+.loginForm input {
+  margin-top: 1%;
+  width: 80%;
+  height: 2.8rem;
+  outline: none;
+  border: 1px #d0d0d0 solid;
+  border-radius: 10px; }
+
+.loginForm input[type="text"], input[type="password"] {
+  font-size: 18px; }
+
+.loginForm .emailLabel {
+  margin-right: 47%; }
+
+.loginForm .passwordLabel {
+  margin-right: 57%; }
+
+.loginForm #logButton {
+  width: 60%;
+  height: 2.8rem;
+  outline: none;
+  background-image: linear-gradient(60deg, #f7973d, #ed4a59);
+  border: 1px #d0d0d0 solid;
+  border-radius: 14px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial; }
+
+.loginForm #logButton a {
+  color: white; }
+
+.loginForm a {
+  text-decoration: none;
+  color: #3787cf; }

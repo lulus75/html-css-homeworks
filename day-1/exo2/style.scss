@@ -1,0 +1,141 @@
+@mixin blockStyle($background, $width, $height, $boxShadow){
+  background-color : $background ;
+  width : $width;
+  height : $height;
+  box-shadow: $boxShadow;
+}
+@mixin fontStyle($color,$fontSize,$fontWeight,$fontFamily){
+  color : $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-family: $fontFamily;
+}
+
+@mixin borderStyle($boder,$borderRadius){
+  border: $boder;
+  border-radius: $borderRadius;
+}
+
+@mixin inputStyle($width,$height){
+  width: $width;
+  height: $height;
+}
+
+
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+
+}
+
+.container{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+#volet{
+  @include blockStyle(whiteSmoke,300px,125px,none);
+  @include fontStyle(black,18px,normal,roboto);
+  @include borderStyle(none,10px);
+  text-align: center;
+  position: absolute;
+  left:50%;
+  top: 25%;
+  z-index: 6;
+  transform: translate(-50%,-25%);
+  display: none;
+
+}
+#volet span{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+#close:hover {
+  opacity: 1;
+}
+#close:before, #close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+#close:before {
+  transform: rotate(45deg);
+}
+#close:after {
+  transform: rotate(-45deg);
+}
+
+#backgroundFilter{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.8;
+  background-color: black;
+  display: none;
+}
+
+
+
+
+.loginForm{
+  margin : auto;
+  text-align: center;
+  @include blockStyle(#FFF, 380px,420px, 0px 0px 6px 1px #b8e3f9);
+  @include fontStyle(#6d6d6d,15px,bold,Arial);
+}
+.loginForm .title{
+  @include fontStyle(#31393d,40px,lighter,Arial);
+}
+.loginForm input{
+  margin-top: 1%;
+  @include inputStyle(80%,2.8rem);
+  outline: none;
+  @include borderStyle(1px #d0d0d0 solid , 10px);
+}
+.loginForm input[type="text"],input[type="password"]
+{
+  font-size:18px;
+}
+
+// Je ne trouve pas le moyen pour bien placer les labels
+.loginForm .emailLabel{
+  margin-right: 47%;
+}
+.loginForm .passwordLabel{
+  margin-right: 57%;
+}
+//
+.loginForm #logButton{
+  @include inputStyle(60%,2.8rem);
+  outline: none;
+  background-image:linear-gradient(60deg, #f7973d, #ed4a59);
+  @include borderStyle(1px #d0d0d0 solid , 14px);
+  @include fontStyle(#FFF,15px,bold,Arial);
+}
+.loginForm #logButton a{
+  color : white;
+}
+
+.loginForm a{
+  text-decoration: none;
+  color :#3787cf;
+}
+
+
